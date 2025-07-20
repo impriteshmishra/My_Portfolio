@@ -38,7 +38,7 @@ export default function HeroSection() {
   return (
     <section
       key={key}
-      className="gap-4 relative min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12  overflow-hidden w-full bg-white"
+      className="gap-4 relative  flex flex-col md:flex-row items-center justify-between px-6 md:px-16  overflow-hidden w-full bg-white mt-16"
       id="#/"
     >
       <div className="mt-10 md:mt-0 md:w-1/2 flex flex-col items-center justify-center text-center space-y-8 z-10">

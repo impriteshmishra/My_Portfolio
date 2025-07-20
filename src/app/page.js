@@ -16,12 +16,11 @@ import Footer from "@/components/Footer"
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-white text-gray-800">
+    <main className="min-h-screen bg-white text-gray-800 dark:bg-gray-900">
       <Navbar />
       <section id="home">
         <HeroSection />
       </section>
-
       <section id="about">
         <About />
       </section>
@@ -31,13 +30,13 @@ export default function Page() {
       <section id="project">
         <ProjectCard />
       </section>
+      <section id="contact">
+        <Contact />
+      </section>
       <section id="resume">
         <Resume />
       </section>
-       <section id="contact">
-        <Contact/>
-      </section>
-      <Footer/>
+      <Footer />
     </main>
   )
 }

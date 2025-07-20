@@ -28,8 +28,8 @@ function Navbar() {
           <li><a href="#about" className="hover:text-blue-500">About</a></li>
           <li><a href="#skills" className="hover:text-blue-500">Skills</a></li>
           <li><a href="#projects" className="hover:text-blue-500">Projects</a></li>
-          <li><a href="#resume" className="hover:text-blue-500">Resume</a></li>
           <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
+          <li><a href="#resume" className="hover:text-blue-500">Resume</a></li>
         </ul>
 
         {/* Mobile Menu Button */}

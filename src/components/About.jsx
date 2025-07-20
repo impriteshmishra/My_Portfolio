@@ -7,34 +7,17 @@ const About = () => {
         <h2 className="text-4xl font-bold text-gray-900 mb-4">👨‍💻 About</h2>
         <div className="bg-[#fdfcf8] p-8 md:p-12 rounded-xl shadow-lg max-w-full mx-auto mt-8 border border-gray-300 font-serif">
           <p className="text-xl text-gray-800 leading-relaxed">
-            I'm <span className="font-semibold text-black">Pritesh Mishra</span>
-            , a curious-minded developer and a 2025 graduate from{" "}
-            <span className="font-semibold text-blue-700">
-              I.K. Gujral Punjab Technical University, Jalandhar
-            </span>
-            , where I completed my B.Tech in{" "}
-            <span className="font-semibold text-blue-700">
-              Electronics and Communication Engineering
-            </span>
-            .
+            I'm <span className="font-semibold text-black">Pritesh Mishra </span>
+          a  passionate and self-driven developer who graduated in 2025 with a B.Tech in Electronics and Communication Engineering from I.K. Gujral Punjab Technical University, Jalandhar.
             <br />
             <br />
-            My academic journey began at{" "}
-            <span className="font-semibold text-blue-700">
-              P G Senior Secondary School, Captanganj, Kushinagar
-            </span>
-            , where I built my foundation by completing my 10th in 2018 and 12th
-            in 2020. These years nurtured my analytical thinking and curiosity,
-            laying the groundwork for my transition into tech.
+            My schooling was completed at P.G. Senior Secondary School, Captaingunj, Kushinagar, where I developed a strong foundation in analytical thinking and problem-solving.
             <br />
             <br />
-            Although my core studies were in electronics, my passion for
-            technology led me to the dynamic world of software development. I’ve
-            since been deeply involved in building full-stack web applications, and deploying real-world
-            solutions that make an impact.
+            Although my academic background is in electronics, my interest in technology led me to the world of software development. Since then, I’ve been actively building full-stack web applications and delivering real-world solutions that focus on usability and impact.
             <br />
             <br />
-           
+           My journey began with a deep curiosity for how technology works, which gradually evolved through building real-world projects. From connecting external APIs to developing full-stack applications, I’ve gained hands-on experience across the development cycle. I enjoy designing intuitive user interfaces, diving into backend logic, and deploying stable, scalable web solutions.
           </p>
         </div>
       </div>
