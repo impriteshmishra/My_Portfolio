@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; 
+import Resume from "./Resume";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +30,8 @@ function Navbar() {
           <li><a href="#skills" className="hover:text-blue-500">Skills</a></li>
           <li><a href="#projects" className="hover:text-blue-500">Projects</a></li>
           <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
-          <li><a href="#resume" className="hover:text-blue-500">Resume</a></li>
+          {/* <li><a href="#resume" className="hover:text-blue-500">Resume</a></li> */}
+          {/* <Resume/> */}
         </ul>
 
         {/* Mobile Menu Button */}
@@ -49,7 +51,7 @@ function Navbar() {
             <li><a href="#about" onClick={closeMenu} className="hover:text-blue-500">About</a></li>
             <li><a href="#skills" onClick={closeMenu} className="hover:text-blue-500">Skills</a></li>
             <li><a href="#projects" onClick={closeMenu} className="hover:text-blue-500">Projects</a></li>
-            <li><a href="#resume" onClick={closeMenu} className="hover:text-blue-500">Resume</a></li>
+            {/* <li><a href="#resume" onClick={closeMenu} className="hover:text-blue-500">Resume</a></li> */}
             <li><a href="#contact" onClick={closeMenu} className="hover:text-blue-500">Contact</a></li>
           </ul>
         </div>

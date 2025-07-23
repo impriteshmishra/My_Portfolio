@@ -7,6 +7,13 @@ import { FiExternalLink } from "react-icons/fi";
 
 const projects = [
   {
+    name: "Accessibility Insight",
+    desc: "Web application tool that scans any public web page for accessibility issues.",
+    github: "https://github.com/impriteshmishra/Accessibility-Insight",
+    deploy: "https://accessibility-insight.onrender.com",
+    image: "/Access.png",
+  },
+  {
     name: "Shortly",
     desc: "URL shortener app with custom alias support and analytics.",
     github: "https://github.com/impriteshmishra/Shortly",
@@ -46,10 +53,11 @@ const projects = [
 
 function ProjectCard() {
   return (
-    <section className="mt-24 px-4 md:px-8 lg:px-36 bg-white" id="projects">
-      <h2 className="text-4xl font-bold text-gray-900 text-center mb-10">
-        💻Projects
+    <section className="flex flex-col justify-center items-center mt-24 px-4 md:px-8 lg:px-36 bg-gradient-to-r from-blue-50 to-purple-50 py-6 rounded-3xl m-6" id="projects">
+      <h2 className="text-4xl font-bold text-gray-900 text-center mb-5">
+        Featured Projects
       </h2>
+      <span className="text-xl text-gray-600 mb-5 ">Here are some of my recent works</span>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
         {projects.map((project) => (
           <div
@@ -87,7 +95,7 @@ function ProjectCard() {
                     className="flex items-center gap-2 bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-500 transition"
                   >
                     <FiExternalLink />
-                    Live
+                    Live Demo
                   </Link>
                 )}
               </div>

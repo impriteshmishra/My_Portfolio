@@ -36,6 +36,7 @@ const Contact = () => {
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
           Contact Me
         </h2>
+        <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
             <label className="block mb-1 font-medium text-gray-700">Name</label>

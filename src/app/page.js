@@ -33,9 +33,6 @@ export default function Page() {
       <section id="contact">
         <Contact />
       </section>
-      <section id="resume">
-        <Resume />
-      </section>
       <Footer />
     </main>
   )

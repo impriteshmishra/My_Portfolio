@@ -6,6 +6,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6";
+import Particles from "../ReactBits/Particles";
+import Resume from "./Resume";
 
 const titleText = " 💻Full-Stack Developer & DevOps Enthusiast🚀 ";
 
@@ -38,10 +40,22 @@ export default function HeroSection() {
   return (
     <section
       key={key}
-      className="gap-4 relative  flex flex-col md:flex-row items-center justify-between px-6 md:px-16  overflow-hidden w-full bg-white mt-16"
+      className="gap-4 relative  flex flex-col md:flex-row items-center justify-between px-6 md:px-16 s overflow-hidden w-full bg-white mt-6 sm:pt-32 pb-16"
       id="#/"
     >
-      <div className="mt-10 md:mt-0 md:w-1/2 flex flex-col items-center justify-center text-center space-y-8 z-10">
+      <div className="absolute inset-0 z-0">
+        <Particles
+          particleColors={["#2563EB", "#2563EB"]}
+          particleCount={500}
+          particleSpread={8}
+          speed={0.3}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
+      <div className="mt-16 md:mt-0 md:w-1/2 flex flex-col items-center justify-center text-center space-y-8 z-10 ">
         <Image
           src="/my_photo.jpg"
           alt="Pritesh's photo"
@@ -49,17 +63,26 @@ export default function HeroSection() {
           height={300}
           className="rounded-full w-[400px] h-[400px] object-cover border-4 border-blue-500 shadow-lg"
         />
-
-        <motion.a
-          href="mailto:priteshmishra2125@gmail.com"
-          target="_blank"
-          whileHover={{ scale: 1.08 }}
-          whileTap={{ scale: 0.95 }}
-          className="relative inline-flex items-center justify-center px-8 py-3 text-white bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full shadow-lg hover:shadow-indigo-500/50 text-lg font-semibold"
-        >
-          <Mail className="w-5 h-5 mr-2" />
-          Hire Me
-        </motion.a>
+        <div className="sm:flex items-center gap-6">
+          <motion.a
+            href="mailto:priteshmishra2125@gmail.com"
+            target="_blank"
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.95 }}
+            className="relative inline-flex items-center justify-center px-8 py-3 text-white bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full shadow-lg hover:shadow-indigo-500/50 text-lg font-semibold"
+          >
+            <Mail className="w-5 h-5 mr-2" />
+            Hire Me
+          </motion.a>
+          <motion.a
+            target="_blank"
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.95 }}
+            className="mb-9"
+          >
+            <Resume />
+          </motion.a>
+        </div>
       </div>
 
       {/* Right section */}

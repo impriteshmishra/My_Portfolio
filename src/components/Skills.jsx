@@ -58,8 +58,9 @@ export default function Skills() {
   return (
     <section id="skills" className="bg-white py-12">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">🛠️Skills</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+        <h2 className="text-4xl font-bold text-gray-900 mb-10">Skills & Technologies</h2>
+         <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 pt-14">
           {skills.map((skill, index) => (
             <div
               key={index}
