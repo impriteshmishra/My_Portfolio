@@ -53,16 +53,22 @@ const projects = [
 
 function ProjectCard() {
   return (
-    <section className="flex flex-col justify-center items-center mt-24 px-4 md:px-8 lg:px-36 bg-gradient-to-r from-blue-50 to-purple-50 py-6 rounded-3xl m-6" id="projects">
-      <h2 className="text-4xl font-bold text-gray-900 text-center mb-5">
+    <section
+      className="flex flex-col justify-center items-center mt-24 px-4 md:px-8 lg:px-36 bg-gradient-to-r from-blue-50 to-purple-50 py-6 rounded-3xl m-6 dark:bg-gray-900 dark:bg-gradient-to-r dark:from-gray-800 dark:via-purple-900 dark:to-teal-900
+"
+      id="projects"
+    >
+      <h2 className="text-4xl font-bold text-gray-900 text-center mb-5 dark:text-gray-200">
         Featured Projects
       </h2>
-      <span className="text-xl text-gray-600 mb-5 ">Here are some of my recent works</span>
+      <span className="text-xl text-gray-600 mb-5 dark:text-gray-300">
+        Here are some of my recent works
+      </span>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
         {projects.map((project) => (
           <div
             key={project.name}
-            className="group bg-white rounded-2xl shadow-lg hover:shadow-xl overflow-hidden border border-blue-100 transition-transform duration-300 ease-in-out transform hover:scale-105"
+            className="group bg-white rounded-2xl shadow-lg hover:shadow-xl overflow-hidden border border-blue-100 transition-transform duration-300 ease-in-out transform hover:scale-105 dark:bg-gray-900"
           >
             <div className="w-full h-48 relative overflow-hidden">
               <Image
@@ -74,10 +80,10 @@ function ProjectCard() {
             </div>
             <div className="p-5 flex flex-col justify-between h-[calc(100%-12rem)]">
               <div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-300">
                   {project.name}
                 </h3>
-                <p className="text-sm text-gray-600 mb-4">{project.desc}</p>
+                <p className="text-sm text-gray-600 mb-4 dark:text-gray-400">{project.desc}</p>
               </div>
               <div className="flex gap-3 mt-auto">
                 <Link

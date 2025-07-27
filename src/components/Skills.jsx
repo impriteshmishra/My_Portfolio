@@ -38,27 +38,27 @@ export default function Skills() {
     { name: "React.js", icon: <SiReact className="text-cyan-400" /> },
     { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
     { name: "Node.js", icon: <SiNodedotjs className="text-green-600" /> },
-    { name: "Express.js", icon: <SiExpress className="text-gray-800" /> },
+    { name: "Express.js", icon: <SiExpress className="text-gray-800 dark:text-gray-400" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-700" /> },
     { name: "MySql", icon: <SiMysql className="text-orange-500" /> },
     { name: "PostgreeSql", icon: <SiPostgresql className="text-blue-800" /> },
-    { name: "NextJs", icon: <SiNextdotjs className="text-black" /> },
+    { name: "NextJs", icon: <SiNextdotjs className="text-black dark:text-gray-400" /> },
     { name: "Git", icon: <SiGit className="text-red-600" /> },
-    { name: "GitHub", icon: <SiGithub className="text-black" /> },
+    { name: "GitHub", icon: <SiGithub className="text-black dark:text-gray-400" /> },
     { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
-    { name: "Prisma", icon: <SiPrisma className="text-black" /> },
+    { name: "Prisma", icon: <SiPrisma className="text-black dark:text-gray-400" /> },
     { name: "Redis", icon: <DiRedis className="text-red-600" /> },
     { name: "Nginx", icon: <SiNginx className="text-green-600" /> },
     { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
     { name: "Docker", icon: <SiDocker className="text-blue-500" /> },
-    { name: "AWS", icon: <FaAws className="text-black" /> },
+    { name: "AWS", icon: <FaAws className="text-black dark:text-gray-400" /> },
     { name: "Linux", icon: <FcLinux className="text-black" /> },
   ];
 
   return (
-    <section id="skills" className="bg-white py-12">
+    <section id="skills" className="bg-white py-12 dark:bg-gray-900 dark:text-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-gray-900 mb-10">Skills & Technologies</h2>
+        <h2 className="text-4xl font-bold text-gray-900 mb-10 dark:text-gray-200">Skills & Technologies</h2>
          <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 pt-14">
           {skills.map((skill, index) => (
@@ -67,7 +67,7 @@ export default function Skills() {
               className="flex flex-col items-center justify-center space-y-2 hover:scale-120 transition-all duration-200"
             >
               <div className="text-5xl">{skill.icon}</div>
-              <p className="text-lg font-semibold text-gray-600">{skill.name}</p>
+              <p className="text-lg font-semibold text-gray-600 dark:text-gray-300">{skill.name}</p>
             </div>
           ))}
         </div>

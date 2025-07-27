@@ -8,7 +8,7 @@ function Resume() {
       <a
         href="/resume.pdf"
         download
-        className="flex items-center gap-2 text-white font-bold px-6 py-3 rounded-3xl shadow-lg bg-gradient-to-r from-blue-500 to-indigo-600 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+        className="flex items-center gap-2 text-white shadow-lg hover:shadow-indigo-500/50 font-bold px-6 py-3 rounded-3xl bg-gradient-to-r from-blue-500 to-indigo-600 transform transition-transform duration-300 hover:scale-105"
       >
         <IoCloudDownloadOutline  className="text-3xl text-white"/> Resume
       </a>

@@ -40,7 +40,7 @@ export default function HeroSection() {
   return (
     <section
       key={key}
-      className="gap-4 relative  flex flex-col md:flex-row items-center justify-between px-6 md:px-16 s overflow-hidden w-full bg-white mt-6 sm:pt-32 pb-16"
+      className="gap-4 relative  flex flex-col md:flex-row items-center justify-between px-6 md:px-16 s overflow-hidden w-full bg-white mt-6 sm:pt-32 pb-16 dark:bg-gray-900 dark:text-white"
       id="#/"
     >
       <div className="absolute inset-0 z-0">
@@ -55,7 +55,7 @@ export default function HeroSection() {
           disableRotation={false}
         />
       </div>
-      <div className="mt-16 md:mt-0 md:w-1/2 flex flex-col items-center justify-center text-center space-y-8 z-10 ">
+      <div className="mt-16 md:mt-0 md:w-1/2 flex flex-col items-center justify-center text-center space-y-8 z-10">
         <Image
           src="/my_photo.jpg"
           alt="Pritesh's photo"
@@ -91,17 +91,17 @@ export default function HeroSection() {
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
-          className="text-4xl md:text-5xl font-extrabold text-gray-900"
+          className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white"
         >
           👋 Hi, I'm{" "}
-          <span className="text-blue-600 dark:text-blue-400 poppins-regular">
+          <span className="text-blue-600 dark:text-blue-500 poppins-regular">
             Pritesh Mishra
           </span>
         </motion.h1>
 
         <motion.h2
           key={key}
-          className="text-2xl md:text-3xl font-semibold text-gray-700 flex flex-wrap "
+          className="text-2xl md:text-3xl font-semibold text-gray-700 flex flex-wrap dark:text-gray-300"
           initial="hidden"
           animate="visible"
         >
@@ -116,7 +116,7 @@ export default function HeroSection() {
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
-          className="text-gray-700 text-xl font-semibold "
+          className="text-gray-700 text-xl font-semibold dark:text-gray-400"
         >
           “Full-stack developer focused on clean code, cloud hosting, and
           delivery pipelines.”

@@ -16,7 +16,7 @@ import Footer from "@/components/Footer"
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-white text-gray-800 dark:bg-gray-900">
+    <main className="min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
       <Navbar />
       <section id="home">
         <HeroSection />

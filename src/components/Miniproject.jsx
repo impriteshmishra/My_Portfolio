@@ -5,13 +5,13 @@ import { FaGithub } from "react-icons/fa";
 
 export default function MiniProjectsCard() {
   return (
-    <Card className="rounded-2xl shadow-md p-6 hover:border-blue-700 transition-shadow bg-white mt-10">
+    <Card className="rounded-2xl shadow-md p-6 hover:border-blue-700 transition-shadow bg-white mt-10 dark:bg-gray-900">
       <CardContent>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-2">💡 Mini Projects</h2>
-        <p className="text-gray-600 text-xl mb-4">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-2 dark:text-gray-300">💡 Mini Projects</h2>
+        <p className="text-gray-600 text-xl mb-4 dark:text-gray-300">
          💻 A curated collection of 20+ mini web applications built using HTML, CSS, and JavaScript during my learning phase. This includes calculators, to-do lists, clocks, games, and more — each project crafted to strengthen my frontend fundamentals, UI logic, and problem-solving skills.
         </p>
-        <ul className="list-disc pl-5 text-lg text-gray-700 mb-4 space-y-1">
+        <ul className="list-disc pl-5 text-lg text-gray-700 mb-4 space-y-1 dark:text-gray-400">
           <li>Analog Watch</li>
           <li>QR Code Generator</li>
           <li>Calculator</li>

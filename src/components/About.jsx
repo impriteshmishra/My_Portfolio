@@ -24,27 +24,27 @@ const About = () => {
     ],
   };
   return (
-    <section className="bg-white py-12 px-4 sm:px-6 lg:px-16 ">
-      <div className="bg-white p-8 rounded-2xl ">
+    <section className="bg-white py-12 px-4 sm:px-6 lg:px-16 dark:bg-gray-900 dark:text-white">
+      <div className="bg-white p-8 rounded-2xl dark:bg-gray-900 dark:text-white">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+          <div className="text-center mb-12 ">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 dark:text-gray-200">About Me</h2>
             <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              <p className="text-lg text-gray-600 leading-relaxed mb-6 dark:text-gray-200">
                 {aboutData.bio}
               </p>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-gray-900">Hobbies</h3>
-                <ul className="space-y-2">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">Hobbies</h3>
+                <ul className="space-y-2 ">
                   {aboutData.hobbies.map((highlight, index) => (
-                    <li key={index} className="flex items-start">
+                    <li key={index} className="flex items-start ">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-600">{highlight}</span>
+                      <span className="text-gray-600 dark:text-gray-200">{highlight}</span>
                     </li>
                   ))}
                 </ul>
@@ -52,15 +52,15 @@ const About = () => {
             </div>
 
             <div className="space-y-6">
-              <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+              <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl dark:bg-gradient-to-r dark:from-purple-900 dark:to-teal-900">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4 dark:text-gray-100">
                   Interests
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {aboutData.interests.map((interest, index) => (
                     <span
                       key={index}
-                      className="px-3 py-1 bg-white text-gray-700 rounded-full text-sm shadow-sm"
+                      className="px-3 py-2 bg-white text-gray-700 rounded-full text-sm shadow-sm dark:text-gray-200 dark:bg-gray-900 dark:font-semibold"
                     >
                       {interest}
                     </span>
