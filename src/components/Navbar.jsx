@@ -20,14 +20,14 @@ function Navbar() {
     <nav className="bg-white shadow-md sticky top-0 z-50 dark:bg-gray-950 dark:text-gray-200 border-gray-600">
       <div className="max-w-7xl mx-auto px-4 py-1 flex justify-between items-center ">
         {/* Logo */}
-        <h1 className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-500 poppins-regular cursor-pointer pt-1">
+        <h1 className="text-2xl md:text-3xl font-semibold text-blue-600 dark:text-blue-500 poppins-regular cursor-pointer pt-1">
           <a href="#home">Pritesh Mishra</a>
           <span className="text-gray-600">.</span>
         </h1>
 
         <div className="flex items-center gap-10 py-1">
           {/* Desktop Menu */}
-          <ul className="hidden md:flex gap-6 text-gray-600 font-semibold text-lg dark:text-gray-200">
+          <ul className="hidden md:flex gap-6 text-gray-600 font-semibold text-md dark:text-gray-200">
             <li>
               <a href="#home" className="hover:text-blue-500">
                 Home
@@ -79,7 +79,7 @@ function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4">
-          <ul className="flex flex-col gap-4 text-gray-600 font-semibold text-lg">
+          <ul className="flex flex-col gap-4 text-gray-600 font-semibold text-sm">
             <li>
               <a
                 href="#home"
