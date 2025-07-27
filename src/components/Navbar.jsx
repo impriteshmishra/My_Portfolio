@@ -64,7 +64,7 @@ function Navbar() {
 
         {/* Mobile Menu Button */}
         <div className="flex items-center gap-6 md:hidden">
-          <div className="bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-full cursor-pointer  px-3 py-3 block md:hidden">
+          <div className="bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-full cursor-pointer px-2 md:px-3 py-1 md:py-3 block md:hidden">
             <ThemeToggle />
           </div>
           <button
