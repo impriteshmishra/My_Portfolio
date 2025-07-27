@@ -18,7 +18,7 @@ const Footer = () => {
             href="https://github.com/impriteshmishra"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white"
+            className="hover:text-gray-500"
           >
             <FaGithub />
           </a>
@@ -26,14 +26,14 @@ const Footer = () => {
             href="https://www.linkedin.com/in/im-priteshmishra/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white"
+            className="hover:text-gray-500"
           >
             <FaLinkedin />
           </a>
           <a
             href="https://x.com/pritesh_misra"
             target="_blank"
-            className="hover:text-white"
+            className="hover:text-gray-500"
           >
             <FaXTwitter/>
           </a>

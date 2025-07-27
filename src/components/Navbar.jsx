@@ -18,14 +18,14 @@ function Navbar() {
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50 dark:bg-gray-950 dark:text-gray-200 border-gray-600">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center ">
+      <div className="max-w-7xl mx-auto px-4 py-1 flex justify-between items-center ">
         {/* Logo */}
-        <h1 className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-500 poppins-regular cursor-pointer pt-2">
+        <h1 className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-500 poppins-regular cursor-pointer pt-1">
           <a href="#home">Pritesh Mishra</a>
           <span className="text-gray-600">.</span>
         </h1>
 
-        <div className="flex items-center gap-10 ">
+        <div className="flex items-center gap-10 py-1">
           {/* Desktop Menu */}
           <ul className="hidden md:flex gap-6 text-gray-600 font-semibold text-lg dark:text-gray-200">
             <li>
@@ -57,14 +57,14 @@ function Navbar() {
             {/* <Resume/> */}
           </ul>
 
-          <div className="bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-full cursor-pointer pb-2 px-3 pt-3 hidden md:inline-block">
+          <div className="bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-full cursor-pointer pb-2 px-3 py-3 hidden md:inline-block">
             <ThemeToggle />
           </div>
         </div>
 
         {/* Mobile Menu Button */}
         <div className="flex items-center gap-6 md:hidden">
-          <div className="bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-full cursor-pointer pb-2 px-3 pt-3 block md:hidden">
+          <div className="bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-full cursor-pointer  px-3 py-3 block md:hidden">
             <ThemeToggle />
           </div>
           <button
