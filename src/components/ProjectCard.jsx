@@ -9,15 +9,15 @@ const projects = [
   {
     name: "Accessibility Insight",
     desc: "Web application tool that scans any public web page for accessibility issues.",
-    github: "https://github.com/impriteshmishra/Accessibility-Insight",
-    deploy: "https://accessibility-insight.onrender.com",
+    github: "https://github.com/impriteshmishra/Frontend_Acceessbility-Insight",
+    deploy: "https://frontend-acceessbility-insight-6kl6.vercel.app/",
     image: "/Access.png",
   },
   {
     name: "Shortly",
     desc: "URL shortener app with custom alias support and analytics.",
     github: "https://github.com/impriteshmishra/Shortly",
-    deploy: "http://13.127.158.54",
+    deploy: "https://shortly-aaik.onrender.com/",
     image: "/Shortly.png",
   },
   {
